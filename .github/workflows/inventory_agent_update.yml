@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'src/infra/agents/inventory-agent.json'
-      - 'src/prompts/<InventoryAgentPrompt>.txt'
+      - 'src/prompts/InventoryAgentPrompt.txt'
       - '.github/workflows/inventory_agent_update.yml'
   workflow_dispatch:
 
