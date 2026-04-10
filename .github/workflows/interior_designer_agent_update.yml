@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'src/infra/agents/interior-designer.json'
-      - 'src/prompts/<InteriorDesignerPrompt>.txt'
+      - 'src/prompts/InteriorDesignerPrompt.txt'
       - '.github/workflows/interior_designer_agent_update.yml'
   workflow_dispatch:
 
@@ -27,7 +27,7 @@ jobs:
         run: |
           INSTRUCTIONS=$(python3 -c "
           import json
-          with open('src/prompts/<InteriorDesignerPrompt>.txt', 'r') as f:
+          with open('src/prompts/InteriorDesignerPrompt.txt', 'r') as f:
               print(json.dumps(f.read()))
           ")
 
