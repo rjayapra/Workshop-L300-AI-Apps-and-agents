@@ -165,9 +165,9 @@ def main() -> None:
     extra_regions = sys.argv[1:]
     regions = DEFAULT_REGIONS + extra_regions
 
-    if not check_login():
-        sys.exit(1)
-
+    '''if not check_login():
+    sys.exit(1)
+    '''  
     print(f"Regions to check: {', '.join(regions)}")
 
     check_providers()
